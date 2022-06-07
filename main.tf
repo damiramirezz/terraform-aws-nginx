@@ -23,13 +23,13 @@ resource "aws_instance" "webserver" {
   }
 
   tags = {
-    Name = "webserver",
-    environment = "testing",
-    owner = "dramirez@edrans.com",
-    costCenter = "SITEOPS",
-    tagVersion = "1",
-    role = "training",
-    project = "terraform",
+    Name           = "webserver",
+    environment    = "testing",
+    owner          = "dramirez@edrans.com",
+    costCenter     = "SITEOPS",
+    tagVersion     = "1",
+    role           = "training",
+    project        = "terraform",
     expirationDate = "2022-06-07T12:00:00.000Z"
   }
 }
