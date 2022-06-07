@@ -8,7 +8,7 @@ resource "aws_instance" "webserver" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt install nginx git",
+      "sudo apt -y install nginx git",
       "sudo systemctl stop apache2",
       "sudo systemctl start nginx",
       "git clone https://github.com/damiramriez/page-favos.git",
@@ -30,6 +30,6 @@ resource "aws_instance" "webserver" {
     tagVersion     = "1",
     role           = "training",
     project        = "terraform",
-    expirationDate = "2022-06-07T12:00:00.000Z"
+    expirationDate = "2022-06-08T10:00:00.000Z"
   }
 }
